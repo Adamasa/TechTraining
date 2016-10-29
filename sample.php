@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<h1>Hallo World !</h1>
+<h1>Hallo World!</h1>
 
 <p>
 今日の日付は
