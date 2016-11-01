@@ -3,22 +3,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-<title>PHPテスト</title>
+<title>PHP</title>
 </head>
 <body>
-
-<h1>Hallo PHP World!</h1>
-
-<p>
-今日の日付は
-<?php
-echo date('Y年m月d日');
-?>
-です。
-</p>
-<?php
-$test = 'test2';
-echo 2 . $test; ?>
-
-</body>
-</html>
