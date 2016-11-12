@@ -25,7 +25,7 @@ class Employee extends Person {
      */
     function printPerson() {
         parent::printPerson();
-        echo "<p>所属部署名: {$this->getSection()}</p>";
+        echo "所属部署名: {$this->getSection()}" . PHP_EOL;
     }
 
     /**

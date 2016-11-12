@@ -26,7 +26,7 @@ class Engineer extends Person {
      */
     function printPerson() {
         parent::printPerson();
-        echo "<p>スキル　　: {$this->getSkill()}</p>";
+        echo "スキル　　: {$this->getSkill()}" . PHP_EOL;
     }
 
     /**

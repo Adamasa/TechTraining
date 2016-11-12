@@ -1,12 +1,9 @@
-
-
-<?php include_once("header.php"); ?>
-
-<h2>Lesson02 逐次決定法</h2>
-<p>配列dataを逐次決定法で昇順にソートして結果を出力するプログラムを作成してください。</p>
-<br/>
-
 <?php
+
+/**
+ * Lesson02 逐次決定法
+ * 配列dataを逐次決定法で昇順にソートして結果を出力するプログラムを作成してください。
+ */
 // ★ ここから----------
 // 1～10までの整数が格納された配列data
 $data = range(1, 10);
@@ -15,12 +12,9 @@ $data = range(1, 10);
 shuffle($data);
 
 // 出力
-print "<p>初期配列</p>";
+print "Initialize ";
 print_r($data);
 // ★ ----------ここまでの部分は変更しないでください。
-?>
-<br/>
-<?php
 // 配列dataの要素数を取得
 $intArrSize = count($data);
 
@@ -43,13 +37,10 @@ for ($i = 0; $i < $intArrSize - 1; $i++) {
         }
     }
     // 途中経過出力
-    print "<p>途中経過{$i}</p>";
+    print PHP_EOL . "Progress{$i} ";
     print_r($data);
 }
 
 // 最終結果出力
-print "<p>最終結果</p>";
+print PHP_EOL . "Result ";
 print_r($data);
-?>
-
-<?php include_once("footer.php"); ?>

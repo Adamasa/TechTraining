@@ -31,10 +31,10 @@ class Person {
      * Personのデータを表示する
      */
     public function printPerson() {
-        echo "<p>氏名　　　: {$this->getName()}</p>";
-        echo "<p>住所　　　: {$this->getAddress()}</p>";
-        echo "<p>年齢　　　: {$this->getAge()}</p>";
-        echo "<p>電話番号　: {$this->getPhone()}</p>";
+        echo "氏名　　　: {$this->getName()}" . PHP_EOL;
+        echo "住所　　　: {$this->getAddress()}" . PHP_EOL;
+        echo "年齢　　　: {$this->getAge()}" . PHP_EOL;
+        echo "電話番号　: {$this->getPhone()}" . PHP_EOL;
     }
 
     /**
