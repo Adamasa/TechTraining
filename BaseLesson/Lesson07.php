@@ -1,6 +1,10 @@
 
 <?php
 
+/**
+ * Lesson07 クラス総合確認
+ * Lesson06で作成したPerson、Employee、Engineerの複数種類のデータをまとめて管理できるプログラムを作成してください。
+ */
 //header('Content-Type: text/html; charset=UTF-8');
 // Person.phpの読み込み
 include_once("Person.php");

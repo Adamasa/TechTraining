@@ -1,6 +1,10 @@
 
 <?php
 
+/**
+ * Lesson05 標準API
+ * Lesson04で作成したPersonクラスをListを使用して複数登録し、登録したデータを全て出力するプログラムを作成してください。
+ */
 // Person.phpの読み込み
 include_once("Person.php");
 

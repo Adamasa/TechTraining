@@ -1,6 +1,11 @@
 
 <?php
 
+/**
+ * Lesson06 継承
+ * Lesson04、Lesson05で作成したプログラムを修正して、社員クラス、技術者クラスを追加し
+ * Listを使用して登録、printメソッドで全て表示するプログラムを作成してください。
+ */
 // Person.phpの読み込み
 include_once("Person.php");
 // Engineer.phpの読み込み
