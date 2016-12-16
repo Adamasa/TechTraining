@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>送信ページ</title>
+        <link rel="stylesheet" type="text/css" href="wiki.css">
+    </head>
+    <body>
+        <form name="myForm" method="get" action="redirect.php">
+            <h1>アンケート内容の送信</h1>
+            <h2>基本情報</h2>
+            <ul>
+                <li>名前：<input type="text" name="name" size="10" value="日本太郎"></li>
+                <li>年齢：<input type="text" name="year" size="3" value="40"></li>
+                <li>住所：<select name="prefecture"><option>東京都</option><option>神奈川県</option></select></li>
+            </ul>
+
+            <h2>アンケート</h2>
+            <ul>
+                <li>毎日、朝食を食べていますか？&nbsp;<input type="radio" name="q1" value="1">はい <input type="radio" name="q1" value="0">いいえ
+                <li>睡眠は6時間以上とっていますか？&nbsp;<input type="radio" name="q2" value="1">はい <input type="radio" name="q2" value="0">いいえ
+                <li>週に1時間以上運動していますか？&nbsp;<input type="radio" name="q3" value="1">はい <input type="radio" name="q3" value="0">いいえ
+            </ul>
+            <input type="submit" value="アンケート送信">
+        </form>
+</html>
