@@ -20,20 +20,43 @@ public class Lesson02 {
         // 0から要素数分ループ
         for (int i = 0; i < data.Length　-　1; i++){
             // iから要素数までループ
-            for (int j = i; j < data.Length; j++){
+            // for (int j = i; j < data.Length; j++){
 
-                // data[j]の値 <= data[i]の値の場合は交換
-                if (data[j] <= data[i]) {
-                    // data[i]の値をtempに退避
-                    int temp = data[i];
+            //     // data[j]の値 <= data[i]の値の場合は交換
+            //     if (data[j] <= data[i]) {
+            //         // data[i]の値をtempに退避
+            //         int temp = data[i];
 
-                    // data[i]にdata[j]を格納
-                    data[i] = data[j];
+            //         // data[i]にdata[j]を格納
+            //         data[i] = data[j];
 
-                    // data[j]にtempを格納
-                    data[j] = temp;
+            //         // data[j]にtempを格納
+            //         data[j] = temp;
 
+            //     }
+
+
+            // 対象のインデックスを最小インデックスに設定
+            int minIndex = i;
+
+            // iから要素数までループ
+            for (int j = i + 1 ; j < data.Length; j++ ){
+                // 最小インデックスの要素より小さい場合
+                if (data[j] < data[minIndex]) {
+                    // 最小インデックスを更新
+                    minIndex = j;
                 }
+            }
+
+            if (data[minIndex] <= data[i]) {
+                // data[i]の値をtempに退避
+                int temp = data[i];
+
+                // data[i]にdata[j]を格納
+                data[i] = data[minIndex];
+
+                // data[j]にtempを格納
+                data[minIndex] = temp;
             }
 
             // 途中経過出力

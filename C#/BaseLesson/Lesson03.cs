@@ -19,6 +19,10 @@ public class Lesson02 {
 
         // 0から要素数分ループ
         for (int i = 0; i < data.Length - 1; i++){
+
+            // ループフラグ(0：ループなし　1：ループあり)
+            int loopFlg = 0;
+
             // 最大要素数からiとぶつかるまでループ
             for (int j = data.Length - 1; i < j ; j--){
 
@@ -33,7 +37,14 @@ public class Lesson02 {
                     // data[j-1]にtempを格納
                     data[j-1] = temp;
 
+                    loopFlg = 1;
+
                 }
+
+            }
+
+            if (loopFlg == 0) {
+                break;
             }
 
             // 途中経過出力

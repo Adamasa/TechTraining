@@ -14,16 +14,18 @@ public class Lesson01 {
         String Result = "";
 
         // CONST_MINからCONST_MAXまでの整数をループ
+        String sep = "";
         for (int i = CONST_MIN; i < CONST_MAX; i++)　{
             String temp = i.ToString();
             
             // 3の倍数または3がつく値の場合
             if (i % 3 == 0 || temp.Contains(CONST_SEARCH)){
-                Result += i + ", ";
+                Result += sep + i;
+                sep = ", ";
             }
         }
 
-        Result = Left(Result, Result.Length - 2);
+        //Result = Left(Result, Result.Length - 2);
 
         System.Console.WriteLine(Result);
 
